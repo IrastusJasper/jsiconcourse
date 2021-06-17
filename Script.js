@@ -87,7 +87,7 @@ console.log(ageKasper > 18);
 
 const isFullAge = ageKasper >= 18;
 console.log(now - 2003 > now - 2005);
-*/
+
 const now = 2021;
 const ageJasper = now - 2003;
 const ageKasper = now - 2005;
@@ -100,3 +100,31 @@ console.log(x, y);
 
 const averageAge = (ageJasper + ageKasper) / 2
 console.log(ageJasper, ageKasper, averageAge);
+*/
+
+
+
+// coding challenges
+// const massMark = 78;
+// const heightMark = 1.69; 
+// const massJohn = 92;
+// const heightJohn = 1.95;
+
+// const markBMI = massMark/ (heightMark)**2;
+// const johnBMI = massJohn/ (heightJohn)**2;
+
+// console.log(markBMI);
+// console.log(johnBMI);
+// console.log(markBMI > johnBMI);
+
+// Another test cases 
+const massMark = 95;
+const heightMark = 1.88; 
+const massJohn = 85;
+const heightJohn = 1.76;
+
+const markBMI = massMark/ (heightMark)**2;
+const johnBMI = massJohn/ (heightJohn)**2;
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI, johnBMI, markHigherBMI);
