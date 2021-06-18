@@ -116,7 +116,7 @@ console.log(ageJasper, ageKasper, averageAge);
 // console.log(markBMI);
 // console.log(johnBMI);
 // console.log(markBMI > johnBMI);
-
+/*
 // Another test cases 
 const massMark = 95;
 const heightMark = 1.88; 
@@ -127,4 +127,25 @@ const markBMI = massMark/ (heightMark)**2;
 const johnBMI = massJohn/ (heightJohn)**2;
 const markHigherBMI = markBMI > johnBMI;
 
-console.log(markBMI, johnBMI, markHigherBMI);
+console.log(markBMI, johnBMI, markHigherBMI);*/
+const firstName = 'Jasper';
+const birthYear = 2003;
+const now = 2021;
+const job = 'Student';
+
+const jasper = "I'm " + firstName + ", a " + (now - birthYear) + " year old " + job + "!";
+
+console.log(jasper);
+
+const irastus  = `I'm ${firstName}, a ${now - birthYear} year old ${job}!`;
+console.log(irastus);
+
+console.log(`Just a regular string.....`);
+
+console.log('String with \n\
+multiple \n\
+lines');
+
+console.log(`String with
+multiple
+lines`);
