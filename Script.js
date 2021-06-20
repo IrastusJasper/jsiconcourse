@@ -127,7 +127,8 @@ const markBMI = massMark/ (heightMark)**2;
 const johnBMI = massJohn/ (heightJohn)**2;
 const markHigherBMI = markBMI > johnBMI;
 
-console.log(markBMI, johnBMI, markHigherBMI);*/
+console.log(markBMI, johnBMI, markHigherBMI);
+
 const firstName = 'Jasper';
 const birthYear = 2003;
 const now = 2021;
@@ -149,3 +150,41 @@ lines');
 console.log(`String with
 multiple
 lines`);
+
+const age = 11;
+const isOldEnough = age >= 18;
+
+if(age >= 18) {
+    console.log('You can start driving license');
+}
+else{
+    const yearLeft =  18 - age;;
+    console.log(`You are too young. Wait for another ${yearLeft} year: `);
+}
+
+const birthYear = 2009;
+
+let century;
+if(birthYear <= 2000){
+    century = 20;
+}else{
+    century = 21;
+}
+console.log(century);*/
+
+const massMark = 95;
+const heightMark = 1.88; 
+const massJohn = 85;
+const heightJohn = 1.76;
+
+const markBMI = massMark/ (heightMark)**2;
+const johnBMI = massJohn/ (heightJohn)**2;
+
+console.log(markBMI, johnBMI);
+
+if(markBMI > johnBMI){
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})!`);
+}
+else{
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`)
+}
