@@ -170,7 +170,7 @@ if(birthYear <= 2000){
 }else{
     century = 21;
 }
-console.log(century);*/
+console.log(century);
 
 const massMark = 95;
 const heightMark = 1.88; 
@@ -187,4 +187,22 @@ if(markBMI > johnBMI){
 }
 else{
     console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI})!`)
-}
+}*/
+
+// type conversion
+const inputYear = '2003';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear)+ 18);
+
+console.log(Number('Jasper'));
+console.log(typeof NaN);
+
+// type coercion
+console.log('Iam '+ 18 + ' years old');
+console.log('23' - '10 - 3');
+console.log('23' / '2');
+console.log('23' > '18');
+
+let n ='1' + 1;// '11'
+n = n - 1;
+console.log(n);
