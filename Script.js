@@ -205,7 +205,7 @@ console.log('23' > '18');
 
 let n ='1' + 1;// '11'
 n = n - 1;
-console.log(n);*/
+console.log(n);
 
 // 5 falsy values: 0, '',undefined, null, NaN
 
@@ -250,4 +250,26 @@ if(favourite === 23){ // 23 === 23 ->true
     console.log('Number is not 23 or 7 or 9');
 }
 
-if(favourite !== 23) console.log('Why not 23?');
+if(favourite !== 23) console.log('Why not 23?');*/
+
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision){
+//     console.log('Jasper is able to drive!');
+// }else{
+//     console.log('Someone else should drive.....')
+// }
+
+const isTired = false; // c
+console.log(hasDriversLicense && hasGoodVision && !isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired){
+    console.log('Jasper is able to drive!');
+}else{
+    console.log('Someone else should drive.....')
+}
