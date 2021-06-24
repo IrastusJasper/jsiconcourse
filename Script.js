@@ -251,7 +251,7 @@ if(favourite === 23){ // 23 === 23 ->true
 }
 
 if(favourite !== 23) console.log('Why not 23?');*/
-
+/*
 const hasDriversLicense = true; //A
 const hasGoodVision = true; //B
 
@@ -272,4 +272,75 @@ if (hasDriversLicense && hasGoodVision && !isTired){
     console.log('Jasper is able to drive!');
 }else{
     console.log('Someone else should drive.....')
+}*/
+
+// coding challenges
+
+// const scoreDolphins = (96 + 108 + 89) /3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+
+// if (scoreDolphins < scoreKoalas){
+//     console.log('Koalas win the competition');
+// }else if(scoreKoalas === scoreDolphins){
+//     console.log('Both win the competition');
+// }else if (scoreKoalas < scoreDolphins){
+//     console.log('Dolphins win the competition');
+// }
+// console.log(scoreDolphins);
+// console.log(scoreKoalas);
+
+// bonus
+
+
+const scoreDolphins = (97 + 112 + 80) /3;
+const scoreKoalas = (109 + 95 + 50) / 3;
+
+if (scoreDolphins < scoreKoalas && scoreKoalas >= 100){
+    console.log('Koalas win the competition');
+}else if(scoreKoalas === scoreDolphins && scoreDolphins >=100 &&scoreKoalas >= 100){
+    console.log('Both win the competition');
+}else if (scoreKoalas < scoreDolphins && scoreDolphins){
+    console.log('Dolphins win the competition');
+}else{
+    console.log('No one win the competition');
+}
+console.log(scoreDolphins);
+console.log(scoreKoalas);
+
+const day = 'friday';
+
+switch (day){
+    case 'monday':
+        console.log('Go to code meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code for example');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+     case 'sunday':
+        console.log('Enjoy the weekend');
+        break;
+    default:
+        console.log('Not a vaild day!');
+}
+
+if (day === 'monday'){
+    console.log('Go to code meetup');
+}else if(day === 'tuesday'){
+    console.log('Prepare theory videos');
+}else if(day === 'wednesday' || day === 'thursday'){
+    console.log('Write code for example');
+}else if(day === 'friday'){
+    console.log('Record videos');
+}else if(day === 'saturday' || day === 'sunday'){
+    console.log('Enjoy the weekend');
+}else{
+    console.log('Not a valid day!');
 }
