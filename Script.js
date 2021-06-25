@@ -292,7 +292,7 @@ if (hasDriversLicense && hasGoodVision && !isTired){
 // bonus
 
 
-const scoreDolphins = (97 + 112 + 80) /3;
+/*const scoreDolphins = (97 + 112 + 80) /3;
 const scoreKoalas = (109 + 95 + 50) / 3;
 
 if (scoreDolphins < scoreKoalas && scoreKoalas >= 100){
@@ -343,4 +343,20 @@ if (day === 'monday'){
     console.log('Enjoy the weekend');
 }else{
     console.log('Not a valid day!');
+}*/
+
+const age = 18;
+// age >= 18 ? console.log('I like to drive bike') : console.log('I like to drive cycle');
+
+const drive = age >= 18 ? 'bike' : 'cycle';
+console.log(drive);
+
+let drive2;
+if (age >= 18){
+    drive2 = 'bike';
+}else{
+    drive2 = 'cycle';
 }
+console.log(drive2);
+
+console.log(`I like to drive ${age >= 18 ? 'bike' : 'cycle'}`)
