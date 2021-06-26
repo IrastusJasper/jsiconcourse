@@ -343,7 +343,7 @@ if (day === 'monday'){
     console.log('Enjoy the weekend');
 }else{
     console.log('Not a valid day!');
-}*/
+}
 
 const age = 18;
 // age >= 18 ? console.log('I like to drive bike') : console.log('I like to drive cycle');
@@ -360,3 +360,22 @@ if (age >= 18){
 console.log(drive2);
 
 console.log(`I like to drive ${age >= 18 ? 'bike' : 'cycle'}`)
+*/
+
+// coding challenge
+
+const bill = 275;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.2 : bill * 0.15;
+console.log(`The bill was ${bill}, the tip was ${tip},and the total value ${bill + tip}`);
+
+// Activating Strict Mode
+'use strict';
+
+let hasDriversLicense = false;
+const passTest = true;
+
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log('I can drive');
+
+// const interface = ' audio';
+// const private = 534;
