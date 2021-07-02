@@ -49,7 +49,7 @@ const yearUntilRetirement = (birthYear, firstName)  => {
 }
 console.log(yearUntilRetirement(2003, 'Jasper'));
 console.log(yearUntilRetirement(2005, 'Kasper'));
-*/
+
 
 // function calling other functions
 
@@ -87,3 +87,33 @@ const yearUntilRetirement = function(birthYear, firstName)  {
 }
 console.log(yearUntilRetirement(1997, 'John'));
 console.log(yearUntilRetirement(1955, 'mike'));
+*/
+
+// coding challenge
+
+const calAverge = (a, b, c) => (a + b + c) / 3;
+
+// test 1
+let scoreDolphins = (44, 23, 71);
+let scoreKoalas = (65, 54, 49);
+console.log(scoreDolphins, scoreKoalas);
+
+const checkWinner = function(avgDolphins, avgKoalas){
+    if(avgDolphins >= 2 * avgKoalas){
+        console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+    }else if(avgKoalas >= 2 * avgDolphins){
+        console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+    }else{
+        console.log(`no one win......`);
+    }
+}
+
+checkWinner(scoreDolphins, scoreKoalas);
+
+checkWinner(576, 111);
+
+// test 2
+scoreDolphins = (85, 54, 41);
+scoreKoalas = (23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);
+checkWinner(scoreDolphins, scoreKoalas);
