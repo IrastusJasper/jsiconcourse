@@ -87,7 +87,7 @@ const yearUntilRetirement = function(birthYear, firstName)  {
 }
 console.log(yearUntilRetirement(1997, 'John'));
 console.log(yearUntilRetirement(1955, 'mike'));
-*/
+
 
 // coding challenge
 
@@ -117,3 +117,43 @@ scoreDolphins = (85, 54, 41);
 scoreKoalas = (23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
+*/
+
+// Array
+
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends =  ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const year  = new Array(2003, 2005, 2009, 2015, 2020);
+console.log(year);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jas';
+console.log(friends);
+
+const firstName = 'Irastus';
+const jasper = [firstName, 'Jasper', 2021 - 2003, 'student', friends];
+console.log(jasper);
+
+const calAge2 = function(birthYear){
+    return 2021 - birthYear;
+}
+const years  = [2003, 2005, 2009, 2015];
+
+const age1 = calAge2(years[0]);
+const age2 = calAge2(years[1]);
+const age3 = calAge2(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [calAge2(years[0]), calAge2(years[1]), calAge2(years[years.length - 1])];
+console.log(ages);
