@@ -117,7 +117,7 @@ scoreDolphins = (85, 54, 41);
 scoreKoalas = (23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
-*/
+
 
 // Array
 
@@ -157,3 +157,49 @@ console.log(age1, age2, age3);
 
 const ages = [calAge2(years[0]), calAge2(years[1]), calAge2(years[years.length - 1])];
 console.log(ages);
+*/
+
+// Basic array operator
+
+const friends =  ['Michael', 'Steven', 'Peter'];
+// Add element in last
+const newLength = friends.push('Jas');
+console.log(friends);
+console.log(newLength);
+
+// Add element in front
+
+friends.unshift('Kas');
+console.log(friends);
+
+
+// Remove element in last
+
+const remove = friends.pop();
+friends.pop();
+console.log(friends);
+console.log(remove);
+
+// Remove element in first
+
+friends.shift();
+console.log(friends);
+
+// indexof - show the index value
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Jas'));
+
+// include - it say true or false
+
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Kas'));
+
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Kas'));
+console.log(friends.includes(23));
+
+if (friends.includes('Michael')){
+    console.log('You have  a friend called Michael');
+}
