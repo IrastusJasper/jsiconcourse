@@ -157,7 +157,7 @@ console.log(age1, age2, age3);
 
 const ages = [calAge2(years[0]), calAge2(years[1]), calAge2(years[years.length - 1])];
 console.log(ages);
-*/
+
 
 // Basic array operator
 
@@ -203,3 +203,37 @@ console.log(friends.includes(23));
 if (friends.includes('Michael')){
     console.log('You have  a friend called Michael');
 }
+*/
+
+// coding challenge
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+  }
+
+ const bill = [125, 555, 44 ];
+
+const tips = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[bill.length - 1])];
+
+const total = [bill[0] + tips[0], bill[1] + tips[1], bill[2] + tips[2]];
+
+console.log(bill,  tips, total);
+
+// recap of array
+
+const sampleArray = [
+    'Irastus',
+    'Jasper',
+    2021 - 2003,
+    'student',
+]
+console.log(sampleArray);
+
+// intro of object
+
+const sample = {
+    firstName: 'Irastus',
+    lastName: 'Jasper',
+    age: 2021-2003,   
+}
+console.log(sample);
