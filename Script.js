@@ -203,7 +203,7 @@ console.log(friends.includes(23));
 if (friends.includes('Michael')){
     console.log('You have  a friend called Michael');
 }
-*/
+
 
 // coding challenge
 
@@ -237,3 +237,28 @@ const sample = {
     age: 2021-2003,   
 }
 console.log(sample);
+*/
+const sample = {
+    firstName: 'Irastus',
+    lastName: 'Jasper',
+    age: 2021-2003, 
+    friends: ['Michael', 'Jas', 'Kas'],  
+}
+console.log(sample);
+
+console.log(sample.lastName);
+console.log(sample['lastName']);
+
+const nameKey = 'Name';
+console.log(sample['first' + nameKey]);
+console.log(sample['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age');
+
+if (sample[interestedIn]){
+    console.log(sample[interestedIn]);
+}else{
+    console.log('Wrong request! Choose between firstName, lastName, age');
+}
+
+console.log(`${sample.firstName} has ${sample.friends.length} friends, and his best friend is called ${sample.friends[0]}`);
