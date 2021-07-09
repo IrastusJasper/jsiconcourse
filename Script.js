@@ -237,7 +237,7 @@ const sample = {
     age: 2021-2003,   
 }
 console.log(sample);
-*/
+
 const sample = {
     firstName: 'Irastus',
     lastName: 'Jasper',
@@ -262,3 +262,19 @@ if (sample[interestedIn]){
 }
 
 console.log(`${sample.firstName} has ${sample.friends.length} friends, and his best friend is called ${sample.friends[0]}`);
+*/
+
+// object Methods
+
+const sample = {
+    firstName: 'Irastus',
+    lastName: 'Jasper',
+    birthYear: 2003,
+    friends: ['Michael', 'Jas', 'Kas'],  
+    hasDriverLicense: true,
+
+    calAge: function(birthYear){
+        return 2021 - birthYear;
+    }
+};
+console.log(sample.calAge(2003));
