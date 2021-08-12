@@ -271,10 +271,71 @@ const sample = {
     lastName: 'Jasper',
     birthYear: 2003,
     friends: ['Michael', 'Jas', 'Kas'],  
-    hasDriverLicense: true,
+    hasDriverslicense: true,
 
-    calAge: function(birthYear){
-        return 2021 - birthYear;
+    // calcAge: function(birthYear){
+    //     return 2021 - birthYear;
+    // }
+    // this--->sample here
+    // calcAge: function(){
+    //     return 2021 - this.birthYear;
+    // }
+    calcAge: function(){
+        this.age =2021 -this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function(){
+        return `${this.firstName} is a ${this.calcAge()}years old student, and he has ${this.hasDriverslicense ? 'a' :
+        'no'} driver's license.`
     }
 };
-console.log(sample.calAge(2003));
+
+console.log(sample.calcAge());
+
+console.log(sample.age);
+
+// console.log(sample['calcAge'](2003));
+
+// challenge
+console.log(sample.getSummary());
+
+// Coding Challenge
+
+const john = {
+    fullName: 'John Smith',
+    weight: 92,
+    height: 1.95,
+
+    calBMI: function(){
+        this.BMI = this.weight / (this.height * this.height);
+        return this.BMI;
+    }
+};
+
+const mark = {
+    fullName: 'Mark Miller',
+    weight: 78,
+    height: 1.69,
+
+    calBMI: function(){
+        this.BMI = this.weight / (this.height * this.height);
+        return this.BMI;
+    }
+};
+john.calBMI();
+mark.calBMI();
+
+console.log(john.BMI, mark.BMI);
+
+
+
+if(john.BMI > mark.BMI){
+    console.log(`${john.fullName}'s BMI (${john.BMI}) is higher than
+    ${mark.fullName}'s BMI (${mark.BMI})`);
+}
+else if(john.BMI < mark.BMI){
+    console.log(`${mark.fullName}'s BMI (${mark.BMI}) is higher than ${john.fullName}'s BMI (${john.BMI})`)
+}
+
+// john smith'sBMI (28.3) is higher than mark miller's (23.9)!""
