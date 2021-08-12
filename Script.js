@@ -264,6 +264,7 @@ if (sample[interestedIn]){
 console.log(`${sample.firstName} has ${sample.friends.length} friends, and his best friend is called ${sample.friends[0]}`);
 */
 
+/*
 // object Methods
 
 const sample = {
@@ -338,4 +339,77 @@ else if(john.BMI < mark.BMI){
     console.log(`${mark.fullName}'s BMI (${mark.BMI}) is higher than ${john.fullName}'s BMI (${john.BMI})`)
 }
 
-// john smith'sBMI (28.3) is higher than mark miller's (23.9)!""
+// john smith'sBMI (28.3) is higher than mark miller's (23.9)!
+*/
+
+// Iteration the for loop
+
+for(let rep = 1; rep <=10; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
+}
+
+
+const sampleArray = [
+    'Irastus',
+    'Jasper',
+    2021 - 2003,
+    'student',
+    ['peter', 'steven'],
+    true
+];
+
+const type = [];
+
+for(let i = 0; i < sampleArray.length; i++){
+    console.log(sampleArray[i], typeof(sampleArray[i]));
+
+    // filling types array
+    // type[i] = typeof sampleArray[i];
+    type.push(typeof sampleArray[i]);
+}
+
+console.log(type)
+
+const years = [1997, 2003, 2005, 2019];
+const ages = [];
+
+for(let i = 0; i < years.length; i++) {
+    ages.push(2021 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log('----- ONLY STRING ------' );
+for(let i = 0; i < sampleArray.length; i++){
+    if(typeof sampleArray[i] !== 'string') continue
+    console.log(sampleArray[i], typeof(sampleArray[i]));
+}
+
+console.log('----- Break with number ------' );
+for(let i = 0; i < sampleArray.length; i++){
+    if(typeof sampleArray[i] === 'number') break
+    console.log(sampleArray[i], typeof(sampleArray[i]));
+}
+
+// Looping backwards and loops in loop
+
+const jasper = [
+    'Irastus',
+    'Jasper',
+    2021 - 2003,
+    'student',
+    ['peter', 'steven'],
+    true
+];
+
+for(let i = jasper.length - 1; i >= 0; i--){
+    console.log(i, jasper[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++){
+    console.log(`------Starting Exercise ${exercise}-------`);
+
+    for (rep = 1; rep < 6; rep++){
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+    }
+}
