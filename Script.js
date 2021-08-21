@@ -413,50 +413,65 @@ for (let exercise = 1; exercise < 4; exercise++){
         console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
     }
 }
-*/
+
 
 // While loop
 
 let rep = 1;
-while(rep <= 10){
-    console.log(`Lifting weights repetition ${rep}`);
-    rep++;
+while (rep <= 10) {
+  console.log(`Lifting weights repetition ${rep}`);
+  rep++;
 }
 
 let dice = Math.trunc(Math.random() * 6) + 1;
 
-while(dice != 6) {
-    console.log(`You rolling a ${dice}`);
-    dice = Math.trunc(Math.random() * 6) + 1;
-    if (dice === 6) console.log('loop is about to an end....')
+while (dice != 6) {
+  console.log(`You rolling a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log('loop is about to an end....');
 }
 
 // Coding Challenge
 
-
-
 const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-  }
-  const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-  const tips = [];
-  const total = [];
-  
-  for(let i = 0; i < bill.length; i++){
-      const tip = calcTip(bill[i]);
-      tips.push(tip);
-      total.push(tip + bill[i]);
-  }
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const total = [];
 
-console.log(bill,  tips, total);
-
-const calcAverage = function (arr){
-    let sum = 0;
-    for(let i = 0; i < arr.length; i++){
-        sum = sum + arr[i];
-    }
-    return sum / arr.length;
+for (let i = 0; i < bill.length; i++) {
+  const tip = calcTip(bill[i]);
+  tips.push(tip);
+  total.push(tip + bill[i]);
 }
+
+console.log(bill, tips, total);
+
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  return sum / arr.length;
+};
 console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(total));
 console.log(calcAverage(tips));
+*/
+// Coding Challenge
+
+const temp1 = [17, 21, 23];
+const temp2 = [12, 5, -5, 0, 4];
+
+console.log(`${temp1[0]}C.....${temp1[1]}C.......${temp1[2]}C `);
+
+const printForecast = function (arr) {
+  let str = '';
+  for (let i = 0; i < arr.length; i++) {
+    str = str + `${arr[i]}C in ${i + 1} days ...`;
+  }
+  console.log('...' + str);
+};
+
+printForecast(temp1);
